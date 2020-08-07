@@ -1,3 +1,6 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.6)
 project(main CXX)
-add_executable(build/a.out src/main.cpp)
+
+set(EXECUTABLE_OUTPUT_PATH build)
+
+add_executable(main src/main.cpp)
